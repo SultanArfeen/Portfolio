@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { illustration, contactInfo } from "../../portfolio";
+import { illustration } from "../../portfolio";
 import { Fade } from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";

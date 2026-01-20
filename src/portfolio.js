@@ -1,6 +1,6 @@
 /* Sultan Ul Arfeen - Portfolio Configuration */
 
-import emoji from "react-easy-emoji";
+// import emoji from "react-easy-emoji"; // Available for future use
 import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Splash Screen

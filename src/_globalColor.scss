@@ -1,0 +1,85 @@
+/* Sultan Ul Arfeen Portfolio - Custom Color Theme */
+
+// button colors - Purple & Cyan gradient theme
+$buttonColor: #667eea;
+$buttonHover: #764ba2;
+$topButtonHover: #667eea;
+
+// text colors light theme
+$titleColor: #1a1a2e;
+$textColor: #16213e;
+$subTitle: #6b7280;
+$cardSubtitle: #4b5563;
+$talkCardSubTitle: #6b7280;
+$blogCardTitleColor: #1f2937;
+
+// text color dark theme
+$textColorDark: #f3f4f6;
+
+// toggle switch colors
+$toggleCheck: #667eea;
+$toggleSwitchSliderBG: #d1d5db;
+
+// githubRepo specific colors
+$githubRepoCardLanguageColorBG: #667eea;
+$githubRepoCardColor: rgb(88, 96, 105);
+$githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
+$githubRepoCardRepoNameColor: #1a1a2e;
+$githubProfileCardLocationTS: #e0e7ff;
+$githubProfileCardBorder: #667eea;
+
+// light background colors
+$lightBackground1: #ffffff;
+$lightBackground2: rgb(250, 250, 255);
+$lightBackground3: #f5f3ff;
+$blogCardContainerColor: #4b5563;
+
+// dark background colors - Richer dark theme
+$darkBackground: #0f0f1a;
+
+// light theme box shadows
+$lightBoxShadowDark: rgba(102, 126, 234, 0.15);
+$lightBoxShadow: rgba(102, 126, 234, 0.1);
+$lightBoxShadowDarker: rgba(102, 126, 234, 0.25);
+
+// dark theme box shadows
+$darkBoxShadow: #667eea;
+$darkBoxShadow2: #a78bfa;
+
+// linear gradients - Purple/Cyan theme
+$experienceCardBlurredDivLG: linear-gradient(rgba(102, 126, 234, 0.4),
+        rgba(118, 75, 162, 0.2));
+$experienceCardBannerLG: linear-gradient(rgba(102, 126, 234, 0.7),
+        rgba(118, 75, 162, 0.5));
+
+// borders
+$progressBarBackground: #e5e7eb;
+$lightBorder1: rgba(102, 126, 234, 0.2);
+$educationCardBorder: #667eea;
+
+// hovers
+$achievementCertificateCardHoverDark: rgba(102, 126, 234, 0.2);
+$blogCardHoverSmallColor: rgba(255, 255, 255, 0.9);
+$headerHoverBG: #f5f3ff;
+$contactDetailHoverTS: #a78bfa;
+
+// misc backgrounds - FIXED: Use solid color for progress bar
+$progressBarSpanBG: #667eea;
+$iconBackground: #1a1a2e;
+$appHeaderBG: #0f0f1a;
+
+// misc colors
+$skillsColor: #667eea;
+$appLink: #764ba2;
+
+// social media icons
+$faceBook: #3b5998;
+$linkedin: #0e76a8;
+$github: #1a1a2e;
+$gitlab: #fca326;
+$google: #ea4335;
+$twitter: #1da1f2;
+$medium: #1a1a2e;
+$stackoverflow: #f48024;
+$instagram: #c13584;
+$kaggle: #20beff;

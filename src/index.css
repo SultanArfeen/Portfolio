@@ -4,7 +4,7 @@
   font-weight: normal;
   src: local("Agustina Regular"),
     url("./assets/fonts/Agustina.woff") format("woff");
-  font-display: swap;
+  font-display: block;
 }
 @font-face {
   font-family: "Montserrat";

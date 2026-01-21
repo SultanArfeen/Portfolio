@@ -19,19 +19,20 @@ const greeting = {
   username: "Sultan Ul Arfeen",
   title: "Hi, I'm Sultan",
   subTitle:
-    "Head of AI & Full-Stack Architecture @ KodeRift. Building Agentic AI workflows, Enterprise RAG pipelines, and scalable full-stack applications. Stanford ML certified with published research in neural network optimization."
-  ,
-  resumeLink: "https://drive.google.com/file/d/1-E7jUjKnT9QvscBzzPU42AK3W5UNO-6L/view?usp=drive_link", // Add your resume link here
+    "Senior AI Engineer with 4 years of experience specializing in building Agentic AI workflows, RAG pipelines, and Scalable Full-Stack applications. I leverage AI-assisted tools like ClaudeCode/AntiGravity to accelerate the development lifecycle, delivering over 100 successful projects to date.",
+  resumeLink: "https://drive.google.com/file/d/1kLjQm0Zb-1iRadmu7b6bGfZz5f6PbV_x/view?usp=sharing", // Add your resume link here
   displayGreeting: true
 };
 
 // Social Media Links
+// Social Media Links
 const socialMediaLinks = {
   github: "https://github.com/SultanArfeen",
-  linkedin: "https://www.linkedin.com/in/sultan-arfeen-560a24353/",
-  gmail: "SultaanUlArfeen@gmail.com",
+  linkedin: "https://linkedin.com/in/sultan-arfeen-560a24353",
+  gmail: "sultaanularfeen@gmail.com",
   medium: "https://medium.com/@sultanularfeen",
   instagram: "https://www.instagram.com/arfeenkd/",
+  web: "https://sultanularfeen.netlify.app",
   display: true
 };
 
@@ -40,10 +41,11 @@ const skillsSection = {
   title: "What I Do",
   subTitle: "AI ENGINEER WHO BRIDGES RESEARCH WITH PRODUCTION",
   skills: [
-    "Build Agentic AI workflows and autonomous agents using LangChain & LlamaIndex",
-    "Architect Enterprise RAG pipelines serving 50,000+ service minutes monthly",
-    "Develop scalable full-stack applications with React, Next.js, and FastAPI",
-    "Apply research methods to fine-tune models for domain-specific efficiency"
+    "- Build Agentic AI workflows and autonomous agents using LangChain & LlamaIndex",
+    "- Architect Enterprise RAG pipelines serving 50,000+ service minutes monthly",
+    "- Develop scalable full-stack applications with React, Next.js, and FastAPI",
+    "- Apply research methods to fine-tune models for domain-specific efficiency",
+    "- Expert at bridging complex backend logic with modern frontends, focusing on high-performance, automated solutions to real world problems."
   ],
 
   softwareSkills: [
@@ -76,26 +78,26 @@ const educationInfo = {
   display: true,
   schools: [
     {
-      schoolName: "National University of Computer and Emerging Sciences (FAST)",
+      schoolName: "Stanford University Department of Computer Science",
+      logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "Machine Learning Certificate Degree",
+      duration: "01/2025 - 12/2025",
+      desc: "Thesis: Legion – A Better Way of Fine-Tuning. Authored 'Legion' A Published Research Paper, Developing a new Selective Neuron Fine-Tuning method increasing efficiency by 20% through Mutation-Based Neuron Walking Analysis methods.",
+      descBullets: [
+        "Deep Neural Networks, CNNs, Computer Vision",
+        "Chatbot Development, Fine-Tuning, Workflow Automation"
+      ]
+    },
+    {
+      schoolName: "FAST (National University of Computer and Emerging Sciences)",
       logo: require("./assets/images/nucesLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "July 2020 - December 2024",
-      desc: "Built the mathematical foundation for AI and developed published research in neural network optimization.",
+      subHeader: "BS (Computer Science)",
+      duration: "06/2020 - 12/2024",
+      desc: "FYP: PakConnekt - A Decentralized Offline Bluetooth Mesh Communication System. Developed 'PakConnekt', A Decentralized Bluetooth mesh system ensuring 100% uptime in offline environments.",
       descBullets: [
         "Published research on Selective Neuron Fine-Tuning using Mutation-Based Analysis",
         "Increased model efficiency by 20% through novel optimization techniques",
         "Focus: Deep Learning, Computer Vision, NLP, AI Software Development"
-      ]
-    },
-    {
-      schoolName: "Stanford University School of Computing",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Machine Learning Certificate Degree",
-      duration: "December 2024 - December 2025",
-      desc: "Specialized in advanced machine learning techniques and production AI systems.",
-      descBullets: [
-        "Deep Neural Networks, CNNs, Computer Vision",
-        "Chatbot Development, Fine-Tuning, Workflow Automation"
       ]
     }
   ]
@@ -119,23 +121,10 @@ const workExperiences = {
   display: true,
   experience: [
     {
-      role: "Head of AI & Full-Stack Architecture",
-      company: "KodeRift",
-      companylogo: require("./assets/images/koderiftLogo.png"),
-      date: "July 2024 - Present",
-      desc: "Leading technical strategy for 100+ projects, bridging AI research with production engineering.",
-      descBullets: [
-        "Architecting Agentic AI workflows and Enterprise RAG pipelines",
-        "Building scalable ecosystems with React, Next.js, Node.js, and Python",
-        "Deploying intelligent SaaS platforms optimized for thousands of concurrent users",
-        "Automating 50,000+ service minutes monthly with high factual accuracy"
-      ]
-    },
-    {
-      role: "AI Developer",
+      role: "AI/ML Engineer",
       company: "Fiverr",
       companylogo: require("./assets/images/fiverrLogo.png"),
-      date: "February 2025 - Present",
+      date: "02/2025 - Present",
       desc: "Freelance AI development specializing in automation and intelligent systems.",
       descBullets: [
         "Building AI automation solutions using n8n, LangChain, and custom agents",
@@ -144,10 +133,21 @@ const workExperiences = {
       ]
     },
     {
+      role: "Head Of AI & Full-Stack Architecture",
+      company: "KodeRift",
+      companylogo: require("./assets/images/koderiftLogo.png"),
+      date: "07/2024 - Present",
+      desc: "Directed technical strategy for 100+ AI projects, reducing development cycles by 40% via AI-assisted workflows and proprietary boilerplates.",
+      descBullets: [
+        "Architected Agentic AI and RAG systems, automating 50,000+ service minutes monthly while ensuring 100% factual accuracy in LLM responses.",
+        "Led the design of secure, scalable ecosystems using Next.js and Node.js for high-traffic international enterprise applications."
+      ]
+    },
+    {
       role: "AI Research Assistant",
       company: "FAST NUCES",
       companylogo: require("./assets/images/nucesLogo.png"),
-      date: "January 2023 - December 2024",
+      date: "01/2023 - 12/2024",
       desc: "Conducted research in neural network optimization and spectral analysis.",
       descBullets: [
         "Published research on Selective Neuron Fine-Tuning methods",
@@ -156,11 +156,11 @@ const workExperiences = {
       ]
     },
     {
-      role: "Web Developer & SEO Specialist",
-      company: "eXputer",
+      role: "Full-Stack Software and SEO Engineer",
+      company: "Exputer",
       companylogo: require("./assets/images/quoraLogo.png"),
-      date: "February 2022 - January 2023",
-      desc: "Software Engineer and SEO specialist at a leading gaming content company.",
+      date: "02/2022 - 01/2023",
+      desc: "Optimized high-traffic web infrastructure, improving responsiveness by 30% and implementing secure OAuth2 standards for global user bases.",
       descBullets: [
         "Created high-quality, SEO-optimized articles boosting organic traffic",
         "Implemented on-page SEO best practices improving SERP rankings",

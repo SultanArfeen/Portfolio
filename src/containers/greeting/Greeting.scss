@@ -66,44 +66,6 @@
   line-height: 40px;
 }
 
-.wave-emoji {
-  animation-duration: 1.8s;
-  animation-iteration-count: infinite;
-  animation-name: wave;
-  display: inline-block;
-  transform-origin: 70% 70%;
-}
-
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  10% {
-    transform: rotate(-10deg);
-  }
-
-  20% {
-    transform: rotate(12deg);
-  }
-
-  30% {
-    transform: rotate(-10deg);
-  }
-
-  40% {
-    transform: rotate(9deg);
-  }
-
-  50% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
@@ -166,7 +128,7 @@
 }
 
 /* Integrated Chat Styles */
-.lottie-chat-container {
+.professional-chat-container {
   position: relative;
   transition: transform 0.3s ease;
   width: 100%;
@@ -174,7 +136,7 @@
   justify-content: center;
 
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
   }
 
   &:hover .chat-hint {
@@ -183,42 +145,46 @@
   }
 }
 
-.profile-image {
-  width: 100%;
-  height: auto;
-  min-width: 450px;
-  max-width: 600px;
-  /* Reduced max-width for better proportion */
-  object-fit: cover;
+.chat-avatar-placeholder {
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  box-shadow: 0 40px 100px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  border: 10px solid rgba(102, 126, 234, 0.3);
-  display: block;
+  position: relative;
+
+  i {
+    font-size: 120px;
+    color: white;
+    opacity: 0.9;
+  }
 
   &:hover {
-    transform: scale(1.03) rotate(3deg);
-    box-shadow: 0 50px 120px rgba(102, 126, 234, 0.5);
-    border-color: rgba(102, 126, 234, 0.5);
+    transform: scale(1.05);
+    box-shadow: 0 30px 80px rgba(102, 126, 234, 0.4);
   }
 }
 
 .chat-hint {
   position: absolute;
-  bottom: 20px;
+  bottom: -50px;
   left: 50%;
   transform: translateX(-50%) translateY(10px);
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
   font-size: 14px;
   font-weight: 500;
   opacity: 0;
   transition: all 0.3s ease;
   white-space: nowrap;
   pointer-events: none;
-  /* unexpected clicks */
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .greeting-chat-window {
@@ -456,9 +422,12 @@
     padding: 6px 12px;
   }
 
-  .profile-image {
-    min-width: unset;
-    max-width: 250px;
-    margin: 0 auto;
+  .chat-avatar-placeholder {
+    width: 200px;
+    height: 200px;
+    
+    i {
+      font-size: 80px;
+    }
   }
 }

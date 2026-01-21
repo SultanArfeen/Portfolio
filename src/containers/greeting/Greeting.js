@@ -407,21 +407,25 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {/* Sultan's Profile Image with Chat */}
+            {/* Professional Chat Button */}
             <div
-              className="lottie-chat-container"
+              className="professional-chat-container"
               onClick={() => setChatOpen(!chatOpen)}
               style={{ cursor: "pointer", position: "relative" }}
+              role="button"
+              aria-label="Open AI assistant chat"
+              tabIndex={0}
+              onKeyPress={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  setChatOpen(!chatOpen);
+                }
+              }}
             >
-              <img
-                alt="Sultan Ul Arfeen"
-                src={require("../../assets/images/sultanProfile.jpg")}
-                className="profile-image"
-              />
-
-              {/* Chat hint */}
-              <div className="chat-hint">
-                Click to chat!
+              <div className="chat-avatar-placeholder">
+                <i className="fas fa-robot" aria-hidden="true"></i>
+              </div>
+              <div className="chat-hint" aria-hidden="true">
+                Click to chat with my AI assistant!
               </div>
             </div>
 

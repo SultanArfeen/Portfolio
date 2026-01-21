@@ -407,21 +407,17 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {/* Sultan's Profile Image with Chat */}
+            {/* Professional Chat Button */}
             <div
-              className="lottie-chat-container"
+              className="professional-chat-container"
               onClick={() => setChatOpen(!chatOpen)}
               style={{ cursor: "pointer", position: "relative" }}
             >
-              <img
-                alt="Sultan Ul Arfeen"
-                src={require("../../assets/images/sultanProfile.jpg")}
-                className="profile-image"
-              />
-
-              {/* Chat hint */}
-              <div className="chat-hint">
-                Click to chat!
+              <div className="chat-avatar-placeholder">
+                <i className="fas fa-robot"></i>
+                <div className="chat-hint">
+                  Click to chat with my AI assistant!
+                </div>
               </div>
             </div>
 

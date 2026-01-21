@@ -30,8 +30,7 @@ Build for production:
 ```bash
 npm run build
 ```
-
-Deploy the `build` folder to Netlify.
+Check the portfolio: https://sultanularfeen.netlify.app/
 
 ## 📫 Contact
 

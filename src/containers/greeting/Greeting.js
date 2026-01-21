@@ -412,12 +412,20 @@ export default function Greeting() {
               className="professional-chat-container"
               onClick={() => setChatOpen(!chatOpen)}
               style={{ cursor: "pointer", position: "relative" }}
+              role="button"
+              aria-label="Open AI assistant chat"
+              tabIndex={0}
+              onKeyPress={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  setChatOpen(!chatOpen);
+                }
+              }}
             >
               <div className="chat-avatar-placeholder">
-                <i className="fas fa-robot"></i>
-                <div className="chat-hint">
-                  Click to chat with my AI assistant!
-                </div>
+                <i className="fas fa-robot" aria-hidden="true"></i>
+              </div>
+              <div className="chat-hint" aria-hidden="true">
+                Click to chat with my AI assistant!
               </div>
             </div>
 

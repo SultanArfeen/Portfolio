@@ -226,21 +226,22 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: 400px;
-  /* narrowed slightly */
-  max-width: 90vw;
-  height: 600px;
-  max-height: 80vh;
-  /* ensure it fits in view */
+  width: 500px;
+  /* Increased from 400px */
+  max-width: 95vw;
+  height: 650px;
+  /* Increased from 600px */
+  max-height: 85vh;
   background: white;
   border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   z-index: 1000;
-  /* Ensure on top */
   animation: slideIn 0.3s ease;
+  text-align: left !important;
+  /* Force left align for the whole window */
 
   &.dark {
     background: #1a1a2e;
@@ -290,22 +291,22 @@
 .chat-header {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 14px 18px;
+  padding: 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 20px;
 
   button {
     background: none;
     border: none;
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
     line-height: 1;
     opacity: 0.8;
     z-index: 10;
-    /* Ensure clickable */
 
     &:hover {
       opacity: 1;
@@ -316,18 +317,19 @@
 .chat-messages {
   flex: 1;
   overflow-y: auto;
-  padding: 16px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
   background: #f8f9fa;
+  text-align: left !important;
 }
 
 .chat-msg {
   max-width: 85%;
-  padding: 12px 16px;
+  padding: 14px 18px;
   border-radius: 16px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 
   &.user {
@@ -342,7 +344,7 @@
     background: white;
     color: #333;
     border-radius: 16px 16px 16px 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -364,38 +366,42 @@
 }
 
 .chat-input-area {
-  padding: 10px;
+  padding: 20px;
   background: white;
   border-top: 1px solid #eee;
   display: flex;
-  gap: 8px;
-  /* Fixed typo 04px */
-  align-self: flex-start;
-  width: 100%;
-  /* Ensure full width */
+  gap: 15px;
+  align-items: center;
+  width: 100% !important;
+  box-sizing: border-box;
 
   input {
     flex: 1;
-    text-align: left;
-    border: 2px solid #e0e0e0;
-    border-radius: 30px;
-    padding: 12px 16px;
-    /* increased padding */
-    font-size: 16px;
-    /* standard mobile font size to prevent zoom */
+    text-align: left !important;
+    border: 3px solid #e0e0e0 !important;
+    /* Thicker border */
+    border-radius: 35px;
+    padding: 20px 30px !important;
+    /* Massive padding */
+    font-size: 22px !important;
+    /* Massive font */
     outline: none;
-    transition: border-color 0.3s;
-    min-height: 48px;
-    /* adjusted */
-    width: 100%;
-    /* ensure flexibility */
+    transition: all 0.3s;
+    height: 80px !important;
+    /* Forced massive height */
+    min-height: 80px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 
     &:focus {
-      border-color: #667eea;
+      border-color: #667eea !important;
+      box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
     }
 
     &::placeholder {
-      color: #999;
+      color: #aaa;
+      text-align: left !important;
     }
   }
 
@@ -403,17 +409,18 @@
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border: none;
-    border-radius: 30px;
-    padding: 0 24px;
-    font-size: 16px;
-    font-weight: 600;
+    border-radius: 35px;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 700;
     cursor: pointer;
-    transition: transform 0.2s;
-    min-height: 48px;
-    min-width: 80px;
+    transition: all 0.2s;
+    height: 70px;
+    min-width: 120px;
 
     &:hover:not(:disabled) {
       transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
     }
 
     &:disabled {

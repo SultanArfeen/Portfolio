@@ -6,6 +6,7 @@ import { Fade } from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import { getAnimationDuration } from "../../utils";
 
 export default function Contact() {
   const { isDark } = useContext(StyleContext);
@@ -63,7 +64,7 @@ export default function Contact() {
   };
 
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <Fade bottom duration={getAnimationDuration()} distance="20px">
       <div id="contact" className="items-container">
         <div className={`contact_wrapper ${isDark ? 'dark' : ''}`}>
           <h1>Contact Me</h1>

@@ -1,6 +1,8 @@
+
 import React from "react";
 import "./Progress.scss";
 import { illustration, techStack } from "../../portfolio";
+import { getAnimationDuration } from "../../utils";
 import { Fade } from "react-reveal";
 import Build from "../../assets/lottie/build";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
@@ -8,7 +10,7 @@ import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 export default function StackProgress() {
   if (techStack.viewSkillBars) {
     return (
-      <Fade bottom duration={1000} distance="20px">
+      <Fade bottom duration={getAnimationDuration()} distance="20px">
         <div className="skills-container" id="proficiency">
           <div className="skills-bar">
             <h1 className="skills-heading">Proficiency</h1>

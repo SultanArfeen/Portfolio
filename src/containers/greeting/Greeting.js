@@ -5,6 +5,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import { getAnimationDuration } from "../../utils";
 
 export default function Greeting() {
   const { isDark } = useContext(StyleContext);
@@ -370,7 +371,7 @@ export default function Greeting() {
   };
 
   return (
-    <Fade bottom duration={1000} distance="40px">
+    <Fade bottom duration={getAnimationDuration()} distance="40px">
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">

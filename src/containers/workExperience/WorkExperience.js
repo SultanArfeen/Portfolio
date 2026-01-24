@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./WorkExperience.scss";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import { workExperiences } from "../../portfolio";
-import { isMobile, getAnimationDuration } from "../../utils";
+import { getAnimationDuration } from "../../utils";
 import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
